@@ -1,0 +1,125 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6ec6ca, #044b69);
+    font-family: Arial, sans-serif;
+}
+
+/* Login Container */
+#login-container {
+    width: 350px;
+    padding: 40px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Icon */
+#profile-icon {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    background-color: #003366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+}
+
+#profile-icon img {
+    width: 50px;
+    height: 50px;
+    filter: invert(1);
+}
+
+/* Input Groups */
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    padding: 5px;
+}
+
+.input-group label img {
+    width: 20px;
+    margin-right: 10px;
+    filter: invert(1);
+}
+
+.input-group input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+}
+
+.input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Options (Remember me and Forgot Password) */
+.options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.options input {
+    margin-right: 5px;
+}
+
+.options a {
+    color: white;
+    text-decoration: none;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+/* Login Button */
+#login-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #003366;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#login-btn:hover {
+    background-color: #005599;
+}
+
+#login-btn:active {
+    background-color: #002244;
+    transform: scale(0.98);
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+    #login-container {
+        width: 90%;
+        padding: 30px;
+    }
+}
